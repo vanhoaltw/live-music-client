@@ -1,8 +1,7 @@
 import { auth, db } from "components/firebase/firebase-config";
 import { onAuthStateChanged } from "firebase/auth";
 import { collection, onSnapshot, query, where } from "firebase/firestore";
-
-const { createContext, useContext, useState, useEffect } = require("react");
+import { createContext, useContext, useState, useEffect } from "react";
 
 const AuthContext = createContext();
 function AuthProvider(props) {
